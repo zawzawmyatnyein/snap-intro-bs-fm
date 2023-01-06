@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/scss/styles.scss">
+    <title>Intro Section - Snap</title>
+  </head>
+  <body class="bg-white">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="/" class="me-5 navbar-brand"><img src="/images/logo.svg" alt="Logo of Snap Website"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle Main Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="mainNav">
+                    <div class="offcanvas-header">
+                        <button type="button" class="ms-auto btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav fw-medium mb-4 mb-lg-0 me-lg-auto">
+                            <li class="nav-item dropdown-center">
+                                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center fs-6 fs-lg-7" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Features
+                                    <img class="ms-2" src="/images/icon-arrow-down.svg">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex align-items-center fs-7 fw-medium">
+                                            <img class="me-3" src="/images/icon-todo.svg">
+                                            Todo List
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex align-items-center fs-7 fw-medium">
+                                            <img class="me-3" src="/images/icon-calendar.svg">
+                                            Calendar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex align-items-center fs-7 fw-medium">
+                                            <img class="me-3" src="/images/icon-reminders.svg">
+                                            Reminders
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item d-flex align-items-center fs-7 fw-medium">
+                                            <img class="me-3" src="/public/images/icon-planning.svg">
+                                            Planning
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown-center">
+                                <a href="#" class="nav-link dropdown-toggle d-flex align-items-center fs-6 fs-lg-7" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Company
+                                    <img class="ms-2" src="/images/icon-arrow-down.svg">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item fs-7 fw-medium">History</a></li>
+                                    <li><a href="#" class="dropdown-item fs-7 fw-medium">Our Team</a></li>
+                                    <li><a href="#" class="dropdown-item fs-7 fw-medium">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link fs-6 fs-lg-7">Career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link fs-6 fs-lg-7">About</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="d-block d-lg-inline mb-4 mb-lg-0 fs-6 fs-lg-7 fw-medium link-dark">Login</a>
+                        <a href="#" class="d-block d-lg-inline ms-lg-5 fs-6 fs-lg-7 fw-medium btn btn-outline-dark rounded-4 px-5 px-lg-4 py-2">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="row gy-6 gy-md-0 gx-md-5 gx-lg-6 py-5 hero">
+            <div class="col-md-6 offset-xl-1 col-xl-5 order-2 order-md-1 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                <h1 class="fw-bold mb-4 mb-lg-4 hero__title">Make remote work</h1>
+                <p class="fs-lg-p text-gray mb-4 mb-lg-5">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <a href="#" class="btn btn-dark btn-lg rounded-4 fs-6 fw-medium hero__btn">Learn more</a>
+                <div class="mt-4 pt-4 mt-lg-5 pt-lg-5 align-self-stretch row">
+                    <div class="col-3">
+                        <img class="img-fluid" src="/images/client-databiz.svg" alt="Logo of databiz">
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="/images/client-audiophile.svg" alt="Logo of audiophile">
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="/images/client-meet.svg" alt="Logo of meet">
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="/images/client-maker.svg" alt="Logo of maker">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-5 order-1 order-md-2">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="/images/image-hero-mobile.png">
+                    <source media="(min-width: 768px)" srcset="/images/image-hero-desktop.png">
+                    <img class="img-fluid" src="/images/image-hero-desktop.png">
+                </picture>
+        </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
